@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./cursophp/assets/css/estilo.css">     
-    <title> DATAS </title>
+    <link rel="stylesheet" href="./assets/css/estilo.css">     
+    <title>  </title>
 </head>
 <body>
 
@@ -15,8 +15,12 @@ echo 'Agora:          '. date('d-m-Y') ."\n\n";
 echo 'Próxima Semana  '. date('d-m-Y', $nextWeek) ."\n\n";
 
 // Usando strtotime()
-echo 'Próxima Semana  '. date('d-m-Y', strtotime('+1 semana')) ."\n";
+echo 'Próxima Semana  '. date('d-m-Y', strtotime('+1 week')) ."\n";
 ?>
 
 </body>
 </html>
+
+
+
+
