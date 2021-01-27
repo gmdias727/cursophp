@@ -78,11 +78,36 @@ Hello World!
 FOOBAR;
 */
 
-echo <<<'EDO'
+
+/*
+echo <<<'EOD'
 Exemplo de uma string em nowdoc
 Barras inversas são interpretadas como elas mesmas.
 e.g. \\ and \'.
 EOD;
+*/
+
+class foo
+{
+    public $foo;
+    public $bar;
+
+    function __construct()
+    {
+        $this->foo ='Foo';
+        $this->bar = array('Bar1', 'Bar2', 'Bar3');
+
+    }
+}
+
+$foo = new foo();
+$name = 'Gabriel Dias';
+
+echo <<<'EOT'
+Meu nome é "$name". Estou imprimindo na tela $foo->foo.
+Agora, estou imprimindo {$foo->bar[1]}.
+Isto não deve imprimir um "A" maiúsculo. \x41
+EOT;
 
 
 ?>
