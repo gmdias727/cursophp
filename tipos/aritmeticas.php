@@ -60,21 +60,23 @@ echo 'Resultado = 1 Resto da divisão = 3 <br>
  se o resto da divisão for "0" o número é par <br>';
 // ATÉ AQUI
 
-
+echo '<br> Vou deixar pra comentar mais o código depois.';
 echo 7 % 2, '<br>';
-
 echo 8 % 2, '<br>';
-# echo 7 / 0, '<br>'; //ERRO
-# echo intdiv(7,0), '<br>'; //ERRO
+#echo 7 / 0, '<br>'; //ERRO
+#echo intdiv(7,0), '<br>'; //ERRO
+
 echo 4 ** 2, '<br>';
+echo 'Foi feito 4 ** 2 em que "**" é um operador de exponenciação. <br>';
 
 
-
-
+echo '<br> Precedência de operadores: <br>
+()  ->  **  ->  /  ->  *  ->  %  ->  +  ->  - <br>';
 # PRECEDÊNCIA DE OPERADORES:
 # ()  =>  **  =>  /  =>  *  =>  %  =>  +  => -
-echo '<p> Precedência </p>';
-echo 2 + 3 * 4, '<br>';
-echo (2 + 3) * 4, '<br>';
-echo 2 + 3 * 4 ** 2, '<br>';
-echo ((2 + 3) * 4) ** 2,'<br>';
+echo 'Precedência <br>';
+echo '2 + 3 * 4 = ' . 2 + 3 * 4, '<br> ';
+echo '(2 + 3) * 4 = '.(2 + 3) * 4, '<br>';
+echo '2 + 3 * 4 ** 2 = ' . 2 + 3 * 4 ** 2, '<br>';
+echo '((2 + 3) * 4) ** 2 = ' . ((2 + 3) * 4) ** 2,'<br>';
+
